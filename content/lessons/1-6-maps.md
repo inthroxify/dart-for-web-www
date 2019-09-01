@@ -12,7 +12,7 @@ There are two ways to create maps:
 
 ```dart
 Map fruit = new Map();
-fruit['appale'] = 'red';
+fruit['apple'] = 'red';
 ```
 
 Or, map literals:
