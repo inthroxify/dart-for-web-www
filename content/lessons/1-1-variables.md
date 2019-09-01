@@ -36,7 +36,7 @@ All uninitialized variables are are initially `null` (opposed to `undefined` in 
 ```dart
 var a;
 if (a == null) {
-  print('it's null');
+  print('it\'s null');
 }
 
 // => it's null
@@ -66,7 +66,7 @@ When establishing a variable, rather than using the keyword `var` (or in ES6 `co
     }
 ```
 
-If you then try to redeclare  x as a String, Dart complains.
+If you then try to redeclare x as a String, Dart complains.
 
 ```dart
     // throws an error when trying to re-assign x.
@@ -81,9 +81,9 @@ If you then try to redeclare  x as a String, Dart complains.
 
 These three variable 'types' aren't really types, but modifiers for variables.
 
-* `final` variables are variables that once assigned, can never be reassigned. There are used as properties on classes.
+* `final` variables are variables that, once assigned, can never be reassigned. They are used as properties on classes.
 * `static` variables are 'member' variables. They are properties on the class itself, rather than instances of the class.
-* `const` objects are deeply immutable. i.e. A Map and *all it's values* are immutable. Also, a constant's entire value must be established at compile time, rather than run-time. 
+* `const` objects are deeply immutable. i.e. A Map and *all of it's values* are immutable. Also, a constant's entire value must be established at compile time, rather than run-time. 
 
 
 The differences between `final` and `const` are subtle.
@@ -107,7 +107,7 @@ The differences between `final` and `const` are subtle.
 
 There are a few more that won't be covered here. 
 
-Types are the biggest difference between JS and Dart, but types are super helpful. This code now 4 points of failure that prevent developer mistakes and bugs. *Spend less time debugging* 🤠.
+Types are the biggest difference between JS and Dart, but types are super helpful. This code avoids 4 points of failure that prevent developer mistakes and bugs. *Spend less time debugging* 🤠.
 
 ```dart
     String doubleAndTransform(int num) {
